@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--FONT GOOGLE-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="calculadora.png">
+    <title>Calculadora</title>
+</head>
+<body>
+    <p id="text-calculo">Cálculo:</p>
+    <p id="calculo"></p>
+    <main>
+        
+        <div id="calculadora" class="calculadora">
+            <div id="visor" class="visor">
+                <label for="visor">0</label>
+            </div>
+            <div class="botoes">
+                <button id="cientifica" class="botao ativo">científica</button>
+                <button id="comum" class="botao">comum</button>
+            </div>
+            <div id="teclado" class="teclado">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label for="rcInv" class="b_hide">Inv</label>
+                                <input type="button" value="Inv" id="rcInv">
+                            </td>
+                            <td>
+                                <label for="rcGrau" class="b_hide">Grau</label>
+                                <input type="button" value="Grau" id="rcGrau">
+                            </td>
+                            <td>
+                                <label for="rcFact" class="b_hide">x!</label>
+                                <input type="button" value="x!" id="rcFact">
+                            </td>
+                            <td>
+                                <label for="rcParenA" class="b_hide">(</label>
+                                <input type="button" value="(" id="rcParenA">
+                            </td>
+                            <td>
+                                <label for="rcParenB" class="b_hide">)</label>
+                                <input type="button" value=")" id="rcParenB">
+                            </td>
+                            <td>
+                                <label for="rcC" class="b_hide">C</label>
+                                <input type="button" value="C" id="rcC">
+                            </td>
+                            <td>
+                                <label for="rcBack" class="b_hide">back</label>
+                                <button id="rcBack" class="btn-teclado"><i class='fa-solid fa-delete-left'></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="rcIn" class="b_hide">In</label>
+                                <input type="button" value="In" id="rcIn">
+                            </td>
+                            <td>
+                                <label for="rcSeno" class="b_hide">Seno</label>
+                                <input type="button" value="Seno" id="rcSeno">
+                            </td>
+                            <td>
+                                <label for="rcPercentage" class="b_hide">%</label>
+                                <input type="button" value="%" id="rcPercentage">
+                            </td>
+                            <td>
+                                <label for="rc7" class="b_hide">7</label>
+                                <input type="button" value="7" id="rc7" class="comum">
+                            </td>
+                            <td>
+                                <label for="rc8" class="b_hide">8</label>
+                                <input type="button" value="8" id="rc8" class="comum">
+                            </td>
+                            <td>
+                                <label for="rc9" class="b_hide">9</label>
+                                <input type="button" value="9" id="rc9" class="comum">
+                            </td>
+                            <td>
+                                <label for="rcDivide" class="b_hide">/</label>
+                                <button id="rcDivide" class="btn-teclado">/</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="rcLog" class="b_hide">Log</label>
+                                <input type="button" value="Log" id="rcLog">
+                            </td>
+                            <td>
+                                <label for="rcCos" class="b_hide">Cos</label>
+                                <input type="button" value="Cos" id="rcCos">
+                            </td>
+                            <td>
+                                <label for="rcRaiz" class="b_hide">√</label>
+                                <input type="button" value="√" id="rcRaiz">
+                            </td>
+                            <td>
+                                <label for="rc4" class="b_hide">4</label>
+                                <input type="button" value="4" id="rc4" class="comum">
+                            </td>
+                            <td>
+                                <label for="rc5" class="b_hide">5</label>
+                                <input type="button" value="5" id="rc5" class="comum">
+                            </td>
+                            <td>
+                                <label for="rc6" class="b_hide">6</label>
+                                <input type="button" value="6" id="rc6" class="comum">
+                            </td>
+                            <td>
+                                <label for="rcMulti" class="b_hide">x</label>
+                                <button id="rcMulti" class="btn-teclado">x</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="rcPot" class="b_hide">^</label>
+                                <input type="button" value="^" id="rcPot">
+                            </td>
+                            <td>
+                                <label for="rcTan" class="b_hide">Tan</label>
+                                <input type="button" value="Tan" id="rcTan">
+                            </td>
+                            <td>
+                                <label for="rcFra" class="b_hide">1/x</label>
+                                <input type="button" value="1/x" id="rcFra">
+                            </td>
+                            <td>
+                                <label for="rc1" class="b_hide">1</label>
+                                <input type="button" value="1" id="rc1" class="comum">
+                            </td>
+                            <td>
+                                <label for="rc2" class="b_hide">2</label>
+                                <input type="button" value="2" id="rc2" class="comum">
+                            </td>
+                            <td>
+                                <label for="rc3" class="b_hide">3</label>
+                                <input type="button" value="3" id="rc3" class="comum">
+                            </td>
+                            <td>
+                                <label for="rcMenos" class="b_hide">-</label>
+                                <button id="rcMenos" class="btn-teclado">-</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="rcExp" class="b_hide">Exp</label>
+                                <input type="button" value="Exp" id="rcExp">
+                            </td>
+                            <td>
+                                <label for="rcTT" class="b_hide">TT</label>
+                                <input type="button" value="TT" id="rcTT">
+                            </td>
+                            <td>
+                                <label for="rcE" class="b_hide">e</label>
+                                <input type="button" value="e" id="rcE">
+                            </td>
+                            <td>
+                                <label for="rc0" class="b_hide">0</label>
+                                <input type="button" value="0" id="rc0" class="comum">
+                            </td>
+                            <td>
+                                <label for="rcVir" class="b_hide">,</label>
+                                <input type="button" value="," id="rcVir" class="comum">
+                            </td>
+                            <td>
+                                <label for="rcIgual" class="b_hide">=</label>
+                                <button id="rcIgual" class="comum"><i class="fa-solid fa-equals"></i></button>                          
+                            </td>
+                            <td>
+                                <label for="rcMais" class="b_hide">+</label>
+                                <button id="rcMais" class="btn-teclado">+</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <!--JS-->
+    <script src="script.js"></script>
+</body>
+</html>
