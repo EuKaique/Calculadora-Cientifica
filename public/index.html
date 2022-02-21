@@ -16,13 +16,12 @@
     <title>Calculadora</title>
 </head>
 <body>
-    <p id="text-calculo">Cálculo:</p>
-    <p id="calculo"></p>
+    <p id="text-calculo">Cálculo:<span id="calculo"></span></p>
     <main>
         
         <div id="calculadora" class="calculadora">
             <div id="visor" class="visor">
-                <label for="visor">0</label>
+                <label for="visor" class="visor-label"></label>
             </div>
             <div class="botoes">
                 <button id="btn-cientifica" class="botao ativo">científica</button>
@@ -46,19 +45,19 @@
                             </td>
                             <td>
                                 <label for="rcParenA" class="b_hide">(</label>
-                                <input type="button" value="(" id="rcParenA">
+                                <input type="button" value="(" id="rcParenA" onclick="teclado('(')">
                             </td>
                             <td>
                                 <label for="rcParenB" class="b_hide">)</label>
-                                <input type="button" value=")" id="rcParenB">
+                                <input type="button" value=")" id="rcParenB" onclick="teclado(')')">
                             </td>
                             <td>
                                 <label for="rcC" class="b_hide">C</label>
-                                <input type="button" value="C" id="rcC">
+                                <input type="button" value="C" id="rcC" onclick="limparTudo()">
                             </td>
                             <td>
                                 <label for="rcBack" class="b_hide">back</label>
-                                <button id="rcBack" class="btn-teclado"><i class='fa-solid fa-delete-left'></i></button>
+                                <button id="rcBack" class="btn-teclado" onclick="limparUm()"><i class='fa-solid fa-delete-left'></i></button>
                             </td>
                         </tr>
                         <tr>
@@ -76,19 +75,19 @@
                             </td>
                             <td>
                                 <label for="rc7" class="b_hide">7</label>
-                                <input type="button" value="7" id="rc7" class="comum">
+                                <input type="button" value="7" id="rc7" class="comum" onclick="teclado(7)">
                             </td>
                             <td>
                                 <label for="rc8" class="b_hide">8</label>
-                                <input type="button" value="8" id="rc8" class="comum">
+                                <input type="button" value="8" id="rc8" class="comum" onclick="teclado(8)">
                             </td>
                             <td>
                                 <label for="rc9" class="b_hide">9</label>
-                                <input type="button" value="9" id="rc9" class="comum">
+                                <input type="button" value="9" id="rc9" class="comum" onclick="teclado(9)">
                             </td>
                             <td>
                                 <label for="rcDivide" class="b_hide">/</label>
-                                <button id="rcDivide" class="btn-teclado">/</button>
+                                <button id="rcDivide" class="btn-teclado" onclick="teclado('/')">/</button>
                             </td>
                         </tr>
                         <tr>
@@ -106,19 +105,19 @@
                             </td>
                             <td>
                                 <label for="rc4" class="b_hide">4</label>
-                                <input type="button" value="4" id="rc4" class="comum">
+                                <input type="button" value="4" id="rc4" class="comum" onclick="teclado(4)">
                             </td>
                             <td>
                                 <label for="rc5" class="b_hide">5</label>
-                                <input type="button" value="5" id="rc5" class="comum">
+                                <input type="button" value="5" id="rc5" class="comum" onclick="teclado(5)">
                             </td>
                             <td>
                                 <label for="rc6" class="b_hide">6</label>
-                                <input type="button" value="6" id="rc6" class="comum">
+                                <input type="button" value="6" id="rc6" class="comum" onclick="teclado(6)">
                             </td>
                             <td>
                                 <label for="rcMulti" class="b_hide">x</label>
-                                <button id="rcMulti" class="btn-teclado">x</button>
+                                <button id="rcMulti" class="btn-teclado" onclick="teclado('*')">x</button>
                             </td>
                         </tr>
                         <tr>
@@ -136,19 +135,19 @@
                             </td>
                             <td>
                                 <label for="rc1" class="b_hide">1</label>
-                                <input type="button" value="1" id="rc1" class="comum">
+                                <input type="button" value="1" id="rc1" class="comum" onclick="teclado(1)">
                             </td>
                             <td>
                                 <label for="rc2" class="b_hide">2</label>
-                                <input type="button" value="2" id="rc2" class="comum">
+                                <input type="button" value="2" id="rc2" class="comum" onclick="teclado(2)">
                             </td>
                             <td>
                                 <label for="rc3" class="b_hide">3</label>
-                                <input type="button" value="3" id="rc3" class="comum">
+                                <input type="button" value="3" id="rc3" class="comum" onclick="teclado(3)">
                             </td>
                             <td>
                                 <label for="rcMenos" class="b_hide">-</label>
-                                <button id="rcMenos" class="btn-teclado">-</button>
+                                <button id="rcMenos" class="btn-teclado" onclick="teclado('-')">-</button>
                             </td>
                         </tr>
                         <tr>
@@ -166,19 +165,19 @@
                             </td>
                             <td>
                                 <label for="rc0" class="b_hide">0</label>
-                                <input type="button" value="0" id="rc0" class="comum">
+                                <input type="button" value="0" id="rc0" class="comum" onclick="teclado(0)">
                             </td>
                             <td>
                                 <label for="rcVir" class="b_hide">,</label>
-                                <input type="button" value="," id="rcVir" class="comum">
+                                <input type="button" value="," id="rcVir" class="comum" onclick="teclado('.')">
                             </td>
                             <td>
                                 <label for="rcIgual" class="b_hide">=</label>
-                                <button id="rcIgual" class="comum"><i class="fa-solid fa-equals"></i></button>                          
+                                <button id="rcIgual" class="comum" onclick="calcular()"><i class="fa-solid fa-equals"></i></button>                          
                             </td>
                             <td>
                                 <label for="rcMais" class="b_hide">+</label>
-                                <button id="rcMais" class="btn-teclado">+</button>
+                                <button id="rcMais" class="btn-teclado" onclick="teclado('+')">+</button>
                             </td>
                         </tr>
                     </tbody>
