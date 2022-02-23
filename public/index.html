@@ -21,6 +21,7 @@
         
         <div id="calculadora" class="calculadora">
             <div id="visor" class="visor">
+                <label for="visor" class="visor-zero"></label>
                 <label for="visor" class="visor-label"></label>
             </div>
             <div class="botoes">
@@ -32,12 +33,12 @@
                     <tbody>
                         <tr>
                             <td class="cal-cientifica">
-                                <label for="rcInv" class="b_hide">Inv</label>
-                                <input type="button" value="Inv" id="rcInv">
+                                <label for="rcInv" class="b_hide">e<sup>x</sup></label>
+                                <button id="rce-elevado" class="btn-teclado">e<sup>x</sup></button>
                             </td>
                             <td class="cal-cientifica">
-                                <label for="rcGrau" class="b_hide">Grau</label>
-                                <input type="button" value="Grau" id="rcGrau">
+                                <label for="rcDez" class="b_hide">10<sup>x</sup></label>
+                                <button id="rcDez" class="btn-teclado">10<sup>x</sup></button>
                             </td>
                             <td class="cal-cientifica">
                                 <label for="rcFact" class="b_hide">x!</label>
@@ -62,8 +63,8 @@
                         </tr>
                         <tr>
                             <td class="cal-cientifica">
-                                <label for="rcIn" class="b_hide">In</label>
-                                <input type="button" value="In" id="rcIn">
+                                <label for="rcLn" class="b_hide">Ln</label>
+                                <input type="button" value="Ln" id="rcLn">
                             </td>
                             <td class="cal-cientifica">
                                 <label for="rcSeno" class="b_hide">Seno</label>
@@ -123,7 +124,7 @@
                         <tr>
                             <td class="cal-cientifica">
                                 <label for="rcPot" class="b_hide">^</label>
-                                <input type="button" value="^" id="rcPot">
+                                <input type="button" value="^" id="rcPot" onclick="teclado('**')">
                             </td>
                             <td class="cal-cientifica">
                                 <label for="rcTan" class="b_hide">Tan</label>

@@ -130,15 +130,24 @@ input[type="button"]{
 .comum{
     background-color: #cccccc;
     border: none;
-    border-radius: .2rem;
 }
 
 .comum:hover{
     background-color: #ebebeb;
 }
 
-#rcIn{
-    padding: .5rem 3.3rem;
+#rcLn{
+    padding: .5rem 3.2rem;
+}
+
+#rce-elevado{
+    padding: .4rem 3.3rem;
+    margin-left: -0.7rem;
+}
+
+#rcDez{
+    padding: .4rem 3.4rem;
+    margin-left: -0.7rem;
 }
 
 #rcPot{
@@ -196,6 +205,10 @@ input[type="button"]{
     background-color: #CD1818;
     color: #FFF;
     cursor: pointer;
+}
+
+#rcIgual:hover{
+    background-color: #f72323;
 }
 
 .b_hide{
