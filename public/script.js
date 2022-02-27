@@ -200,7 +200,7 @@ $(function(){
             rcIgual.css('padding','0.86rem 1rem');
         }
         if(telaCalculadora <= '500' && telaCalculadora > '340'){
-            calculadora.width('29em');
+            calculadora.width('24rem');
             calculadora.height('28rem');
             botoes.css('margin-left','0');
             botoes.css('margin-top','0.7rem');
@@ -394,7 +394,7 @@ function tela(){
         rcIgual.css('padding','0.86rem 1rem');
     }
     if(telaCalculadora <= '500' && telaCalculadora > '340'){
-        calculadora.width('29em');
+        calculadora.width('24rem');
         calculadora.height('28rem');
         botoes.css('margin-left','0');
         botoes.css('margin-top','0.7rem');
