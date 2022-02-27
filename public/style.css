@@ -216,3 +216,12 @@ input[type="button"]{
 }
 
 /* RESPONSIVO */
+@media screen and (max-width: 400px){
+    .cal-cientifica:first-child{
+        margin-left: -10px;
+    }
+    #rcDez{
+        padding: 0.3rem 0.8rem;
+        margin-left: -11px;   
+    }
+}

@@ -38,6 +38,10 @@ $(function(){
     var rcParenB = $('#rcParenB');
     var rcC = $('#rcC');
     var rcBack = $('#rcBack');
+    var rcMais = $('#rcMais');
+    var rcMenos = $('#rcMenos');
+    var rcMulti = $('#rcMulti');
+    var rcDivide = $('#rcDivide');
 
     //Adiciona e remove a classe ativo, mostra e oculta funções das calculadoras
     btnComum.on('click',function(){
@@ -200,7 +204,7 @@ $(function(){
             rcIgual.css('padding','0.86rem 1rem');
         }
         if(telaCalculadora <= '500' && telaCalculadora > '340'){
-            calculadora.width('24rem');
+            calculadora.width('22.5rem');
             calculadora.height('28rem');
             botoes.css('margin-left','0');
             botoes.css('margin-top','0.7rem');
@@ -214,7 +218,7 @@ $(function(){
             rcLn.css('padding','0.5rem 1rem');
             rcLog.css('padding','0.5rem 0.7rem');
             rcExp.css('padding','0.5rem 0.7rem');
-            rcPot.css('padding','0.5rem 1rem');
+            rcPot.css('padding','0.5rem 1.35rem');
             rcDez.css('padding','0.5rem 0.8rem');
             rcSeno.css('padding','0.5rem 0.4rem');
             rcCos.css('padding','0.5rem 0.7rem');
@@ -228,7 +232,11 @@ $(function(){
             rcParenA.css('padding','0.5rem 0.8rem');
             rcParenB.css('padding','0.5rem 0.8rem');
             rcC.css('padding','0.5rem 0.7rem');
-            rcBack.css('padding','0.5rem 0.8rem');
+            rcBack.css('padding','0.5rem 0.2rem');
+            rcMais.css('padding','0.5rem 0.7rem');
+            rcMenos.css('padding','0.5rem 0.7rem');
+            rcMulti.css('padding','0.5rem 0.7rem');
+            rcDivide.css('padding','0.5rem 0.7rem');
             rc9.css('padding','0.5rem 0.8rem');
             rc8.css('padding','0.5rem 0.8rem');
             rc7.css('padding','0.5rem 0.8rem');
@@ -241,6 +249,7 @@ $(function(){
             rc0.css('padding','0.5rem 0.8rem');
             rcPon.css('padding','0.5rem 1rem');
             rcIgual.css('padding','0.86rem 0.8rem');
+            $('.btn-teclado').css('margin-left','-0.8rem');
         }
 
     });
@@ -289,6 +298,10 @@ function tela(){
     var rcC = $('#rcC');
     var rcBack = $('#rcBack');
     var rcIgual = $('#rcIgual');
+    var rcMais = $('#rcMais');
+    var rcMenos = $('#rcMenos');
+    var rcMulti = $('#rcMulti');
+    var rcDivide = $('#rcDivide');
     
     if(telaCalculadora <= '1280' && telaCalculadora > '1000'){
         calculadora.width('80%');
@@ -394,7 +407,7 @@ function tela(){
         rcIgual.css('padding','0.86rem 1rem');
     }
     if(telaCalculadora <= '500' && telaCalculadora > '340'){
-        calculadora.width('24rem');
+        calculadora.width('22.5rem');
         calculadora.height('28rem');
         botoes.css('margin-left','0');
         botoes.css('margin-top','0.7rem');
@@ -408,7 +421,7 @@ function tela(){
         rcLn.css('padding','0.5rem 1rem');
         rcLog.css('padding','0.5rem 0.7rem');
         rcExp.css('padding','0.5rem 0.7rem');
-        rcPot.css('padding','0.5rem 1rem');
+        rcPot.css('padding','0.5rem 1.35rem');
         rcDez.css('padding','0.5rem 0.8rem');
         rcSeno.css('padding','0.5rem 0.4rem');
         rcCos.css('padding','0.5rem 0.7rem');
@@ -422,7 +435,11 @@ function tela(){
         rcParenA.css('padding','0.5rem 0.8rem');
         rcParenB.css('padding','0.5rem 0.8rem');
         rcC.css('padding','0.5rem 0.7rem');
-        rcBack.css('padding','0.5rem 0.8rem');
+        rcBack.css('padding','0.5rem 0.2rem');
+        rcMais.css('padding','0.5rem 0.7rem');
+        rcMenos.css('padding','0.5rem 0.7rem');
+        rcMulti.css('padding','0.5rem 0.7rem');
+        rcDivide.css('padding','0.5rem 0.7rem');
         rc9.css('padding','0.5rem 0.8rem');
         rc8.css('padding','0.5rem 0.8rem');
         rc7.css('padding','0.5rem 0.8rem');
@@ -435,6 +452,7 @@ function tela(){
         rc0.css('padding','0.5rem 0.8rem');
         rcPon.css('padding','0.5rem 1rem');
         rcIgual.css('padding','0.86rem 0.8rem');
+        $('.btn-teclado').css('margin-left','-0.8rem');
     }
 }
 
