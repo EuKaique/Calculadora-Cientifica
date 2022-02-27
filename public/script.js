@@ -92,6 +92,12 @@ $(function(){
             textoCalculo.css('margin-left','26%');
             $('#btn-cientifica').css('margin-left','0');
             $('#btn-cientifica').css('margin-right','0');
+            rcBack.css('padding','0.5rem 0.8rem');
+            rcMais.css('padding','0.5rem 1.16rem');
+            rcMenos.css('padding','0.5rem 1.33rem');
+            rcMulti.css('padding','0.5rem 1.2rem');
+            rcDivide.css('padding','0.5rem 1.3rem');
+            $('.btn-teclado').css('margin-left','0.2rem');
         }
     });
 
@@ -205,6 +211,7 @@ $(function(){
         }
         if(telaCalculadora <= '500' && telaCalculadora > '340'){
             calculadora.width('22.5rem');
+            calculadora.css('margin-left','2%');
             calculadora.height('28rem');
             botoes.css('margin-left','0');
             botoes.css('margin-top','0.7rem');
@@ -408,6 +415,7 @@ function tela(){
     }
     if(telaCalculadora <= '500' && telaCalculadora > '340'){
         calculadora.width('22.5rem');
+        calculadora.css('margin-left','2%');
         calculadora.height('28rem');
         botoes.css('margin-left','0');
         botoes.css('margin-top','0.7rem');
