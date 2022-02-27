@@ -195,7 +195,7 @@ input[type="button"]{
     padding: .5rem 3.6rem;
 }
 
-#rcVir{
+#rcPon{
     padding: .5rem 3.3rem;
 }
 
@@ -214,3 +214,5 @@ input[type="button"]{
 .b_hide{
     display: none;
 }
+
+/* RESPONSIVO */

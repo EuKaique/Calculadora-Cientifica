@@ -15,7 +15,7 @@
     <link rel="icon" href="calculadora.png">
     <title>Calculadora</title>
 </head>
-<body>
+<body onload="tela()">
     <p id="text-calculo">Cálculo:<span id="calculo"></span></p>
     <main>
         
@@ -40,7 +40,7 @@
                                 <label for="rcDez" class="b_hide">10<sup>x</sup></label>
                                 <button id="rcDez" class="btn-teclado">10<sup>x</sup></button>
                             </td>
-                            <td class="cal-cientifica">
+                            <td class="cal-cientifica" id="cal-fatorial">
                                 <label for="rcFact" class="b_hide">x!</label>
                                 <input type="button" value="x!" id="rcFact">
                             </td>
@@ -169,8 +169,8 @@
                                 <input type="button" value="0" id="rc0" class="comum" onclick="teclado(0)">
                             </td>
                             <td>
-                                <label for="rcVir" class="b_hide">,</label>
-                                <input type="button" value="," id="rcVir" class="comum" onclick="teclado('.')">
+                                <label for="rcPon" class="b_hide">,</label>
+                                <input type="button" value="." id="rcPon" class="comum" onclick="teclado('.')">
                             </td>
                             <td>
                                 <label for="rcIgual" class="b_hide">=</label>
