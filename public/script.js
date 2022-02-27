@@ -199,7 +199,7 @@ $(function(){
             rcPon.css('padding','0.5rem 1.2rem');
             rcIgual.css('padding','0.86rem 1rem');
         }
-        if(telaCalculadora <= '500' && telaCalculadora > '360'){
+        if(telaCalculadora <= '500' && telaCalculadora > '340'){
             calculadora.width('30rem');
             calculadora.height('28rem');
             botoes.css('margin-left','0');
@@ -393,7 +393,7 @@ function tela(){
         rcPon.css('padding','0.5rem 1.2rem');
         rcIgual.css('padding','0.86rem 1rem');
     }
-    if(telaCalculadora <= '500' && telaCalculadora > '360'){
+    if(telaCalculadora <= '500' && telaCalculadora > '340'){
         calculadora.width('30rem');
         calculadora.height('28rem');
         botoes.css('margin-left','0');
