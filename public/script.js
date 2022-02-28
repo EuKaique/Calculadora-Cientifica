@@ -222,6 +222,7 @@ $(function(){
             textoCalculo.css('position','relative');
             visor.width('100%');
             rceElevado.css('padding','0.4rem 1.1rem');
+            rceElevado.css('margin-left','-0.8rem');
             rcLn.css('padding','0.5rem 1rem');
             rcLog.css('padding','0.5rem 0.7rem');
             rcExp.css('padding','0.5rem 0.7rem');
@@ -244,6 +245,11 @@ $(function(){
             rcMenos.css('padding','0.5rem 0.7rem');
             rcMulti.css('padding','0.5rem 0.7rem');
             rcDivide.css('padding','0.5rem 0.7rem');
+            rcBack.css('margin-left','-0.8rem');
+            rcMais.css('margin-left','-0.8rem');
+            rcMenos.css('margin-left','-0.8rem');
+            rcMulti.css('margin-left','-0.8rem');
+            rcDivide.css('margin-left','-0.8rem');
             rc9.css('padding','0.5rem 0.8rem');
             rc8.css('padding','0.5rem 0.8rem');
             rc7.css('padding','0.5rem 0.8rem');
@@ -256,7 +262,7 @@ $(function(){
             rc0.css('padding','0.5rem 0.8rem');
             rcPon.css('padding','0.5rem 1rem');
             rcIgual.css('padding','0.86rem 0.8rem');
-            $('.btn-teclado').css('margin-left','-0.8rem');
+            $('.btn-teclado').css('margin-left','-0.8rem !important');
         }
 
     });

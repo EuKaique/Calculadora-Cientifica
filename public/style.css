@@ -221,7 +221,10 @@ input[type="button"]{
         margin-left: -10px;
     }
     #rcDez{
-        padding: 0.3rem 0.8rem;
-        margin-left: -11px;   
+        padding: 0.35rem 0.8rem !important;
+        margin-left: -0.7rem !important;   
+    }
+    .btn-teclado{
+        margin-left: -0.8rem;
     }
 }
